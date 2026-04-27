@@ -1,1 +1,271 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Canto Cristão | Música que eleva e inspira</title>
+  <meta name="description" content="Canto Cristão - Música que eleva e inspira">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --gold:#c9a74d; }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body {
+      font-family:'Inter',sans-serif;
+      background:linear-gradient(160deg,#0f0f0f,#2a2a2a 40%,#1c1c1c 100%);
+      color:white;
+    }
+
+    header {
+      position:fixed;
+      width:100%;
+      padding:15px 30px;
+      display:flex;
+      justify-content:space-between;
+      z-index:1000;
+      transition:0.3s;
+    }
+
+    header.scrolled { background:rgba(0,0,0,0.85); }
+
+    header h1 {
+      font-family:'Playfair Display';
+      color:var(--gold);
+    }
+
+    nav a {
+      color:white;
+      margin-left:20px;
+      text-decoration:none;
+    }
+
+    /* HERO AGORA APARECE NORMAL */
+    .hero {
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+        url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') center/cover no-repeat;
+    }
+
+    .hero h2 {
+      font-size:48px;
+      font-family:'Playfair Display';
+    }
+
+    .hero p { margin:20px 0; }
+
+    .btn {
+      display:inline-block;
+      margin:10px;
+      padding:12px 22px;
+      background:var(--gold);
+      color:black;
+      border-radius:5px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    section {
+      padding:80px 20px;
+      max-width:1000px;
+      margin:auto;
+      text-align:center;
+    }
+
+    /* animação só depois do hero */
+    .fade {
+      opacity:0;
+      transform:translateY(40px);
+      transition:0.6s;
+    }
+
+    .fade.visible {
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    h3 {
+      margin-bottom:20px;
+      color:var(--gold);
+    }
+
+    iframe { border-radius:12px; }
+
+    /* VIDEOS */
+    .video-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .video-card {
+      position:relative;
+      border-radius:12px;
+      overflow:hidden;
+      cursor:pointer;
+    }
+
+    .video-card img {
+      width:100%;
+      transition:0.3s;
+    }
+
+    .video-card:hover img {
+      transform:scale(1.05);
+      filter:brightness(0.7);
+    }
+
+    .play {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      font-size:40px;
+    }
+
+    footer {
+      text-align:center;
+      padding:30px;
+      background:#000;
+    }
+
+    .whatsapp {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25d366;
+      padding:15px;
+      border-radius:50%;
+      color:white;
+      text-decoration:none;
+    }
+
+    @media(max-width:768px){
+      .hero h2 { font-size:32px; }
+    }
+	
+	.logo-text {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.logo-text::before,
+	.logo-text::after {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  width: 100%;
+	  height: 2px;
+	  background: #c9a74d;
+	}
+
+	.logo-text::before {
+	  top: -6px;
+	}
+
+	.logo-text::after {
+	  bottom: -6px;
+	}
+  </style>
+</head>
+
+<body>
+
+<header id="header">
+  <h1 class="logo-text">CANTO CRISTÃO</h1>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#musicas">Músicas</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<!-- HERO visível imediatamente -->
+<section class="hero">
+  <div>
+    <h2>Música que eleva e inspira</h2>
+    <p>Sons que tocam a alma e despertam a consciência</p>
+
+    <a class="btn" href="https://open.spotify.com/intl-pt/artist/6e2ANwA8CSxdwx17cvFocL" target="_blank">Spotify</a>
+    <a class="btn" href="https://www.instagram.com/cantocristao.oficial/" target="_blank">Instagram</a>
+    <a class="btn" href="https://www.youtube.com/cantocristao" target="_blank">YouTube</a>
+  </div>
+</section>
+
+<section id="sobre" class="fade">
+  <h3>Sobre</h3>
+  <p>Evangelizando através da arte, seja em datas comemorativas das casas espíritas ou até mesmo em momentos musicais durante as reuniões públicas. A música vem acompanhada de temáticas doutrinárias e esclarecedoras.
+
+  A banda teve início em meados de 2010, com novas ideias de releituras musicais autorais e de amigos de estrada, engajados com a doutrina espírita. Voluntários deste trabalho que vem agregar reflexões, aprendizados, evangelização e alegria. Uma iniciativa voluntária, que vem propor uma abordagem diferenciada nos ensinamentos do evangelho.
+  </p>
+</section>
+
+<section id="musicas" class="fade">
+  <h3>Músicas</h3>
+  <iframe src="https://open.spotify.com/embed/artist/6e2ANwA8CSxdwx17cvFocL" width="100%" height="152"></iframe>
+</section>
+
+<section id="videos" class="fade">
+  <h3>Vídeos</h3>
+
+  <div class="video-grid">
+
+    <a href="https://www.youtube.com/watch?v=7rIs1vZ3d3c" target="_blank" class="video-card">
+      <img src="https://img.youtube.com/vi/7rIs1vZ3d3c/0.jpg">
+      <div class="play">▶</div>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=nRb7TfQobH0" target="_blank" class="video-card">
+      <img src="https://img.youtube.com/vi/nRb7TfQobH0/0.jpg">
+      <div class="play">▶</div>
+    </a>
+
+  </div>
+</section>
+
+<section id="contato" class="fade">
+  <h3>Contato</h3>
+  <p>Instagram: @cantocristao.oficial</p>
+</section>
+
+<footer>
+  <p>© 2026 Canto Cristão</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5581992506639" target="_blank">💬</a>
+
+<script>
+  // navbar efeito
+  window.addEventListener("scroll", () => {
+    document.getElementById("header").classList.toggle("scrolled", window.scrollY > 50);
+  });
+
+  // animação
+  const fades = document.querySelectorAll(".fade");
+  window.addEventListener("scroll", () => {
+    fades.forEach(el => {
+      if(el.getBoundingClientRect().top < window.innerHeight - 100){
+        el.classList.add("visible");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
